@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linkon | Graphic Designer & Illustrator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // Enable class-based dark mode
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#00F5A0', // Retained for dark theme accent
+              'secondary': '#00D9E9', // Retained for dark theme accent
+              'background': '#111827',
+              'surface': '#1F2937',
+              'text-primary': '#F9FAFB',
+              'text-secondary': '#D1D5DB',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
+              'subtle-bob': 'subtleBob 4s ease-in-out infinite',
+              'scrolling': 'scrolling 60s linear infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              subtleBob: {
+                '0%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-10px)' },
+                '100%': { transform: 'translateY(0px)' },
+              },
+              scrolling: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(calc(-352px * 8))' },
+              },
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
